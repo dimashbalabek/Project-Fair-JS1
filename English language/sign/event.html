@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+      }
+
+      section .leftBox {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+
+      section .leftBox .content {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        transition: 0.5s;
+      }
+
+      section .leftBox .content:hover {
+        background: #5b0145;
+      }
+
+      section .leftBox .content h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+
+      section .leftBox .content p {
+        margin: 10px 0 0;
+        padding: 0;
+      }
+
+      section .events {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        float: right;
+        box-sizing: border-box;
+      }
+
+      section .events ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 40px;
+        box-sizing: border-box;
+      }
+
+      section .events ul li {
+        list-style: none;
+        background: #fff;
+        box-sizing: border-box;
+        height: 200px;
+        margin: 15px 0;
+      }
+
+      section .events ul li .time {
+        position: relative;
+        padding: 20px;
+        background: #262626;
+        box-sizing: border-box;
+        width: 30%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        transition: 0.5s;
+      }
+
+      section .events ul li:hover .time {
+        background: #5b014c;
+      }
+
+      section .events ul li .time h2 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 60px;
+        line-height: 30px;
+      }
+
+      section .events ul li .time h2 span {
+        font-size: 30px;
+      }
+
+      section .events ul li .details {
+        padding: 20px;
+        background: #fff;
+        box-sizing: border-box;
+        width: 70%;
+        height: 100%;
+        float: left;
+      }
+
+      section .events ul li .details h3 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+      }
+
+      section .events ul li .details p {
+        position: relative;
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      section .events ul li .details a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 1.5px solid #262626;
+        margin-top: 8px;
+        font-size: 18px;
+        transition: 0.5s;
+      }
+
+      section .events ul li .details a:hover {
+        background: #101010;
+        color: #fff;
+        border-color: #8f0988;
+      }
+      .slider-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .slider {
+        display: flex;
+        overflow: hidden;
+      }
+
+      .slide {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 350px;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(224, 223, 223, 0.5);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1;
+      }
+
+      .prev {
+        left: 0;
+      }
+
+      .next {
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="leftBox">
+        <div class="content">
+          <h1>Events and Shows</h1>
+          <h2>in Jambyl Region</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img
+                  src="https://www.akorda.kz/assets/media/kz4-8678-2.jpg"
+                  alt="Image 1"
+                />
+                <h2>Nauryz 2024 March 20-23</h2>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://eldala.kz/uploads/all/4a/2b/96/4a2b96f5f3f1deeb40ce872ccc3c7462.jpeg"
+                  alt="Image 2"
+                />
+                <h2>KazAgro Jambyl 2024</h2>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://tengrinews.kz/userdata/u38/2022-10/resize/ca24d6545cad69bb0c6f93ad717e1c59.jpeg"
+                  alt="Image 3"
+                />
+                <h2>International day of theatre 27 March</h2>
+              </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <div class="events">
+        <ul>
+          <li>
+            <div class="time">
+              <h2>23 <br /><span>March</span></h2>
+            </div>
+            <div class="details">
+              <h3>Nauryz</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>26 <br /><span>March</span></h2>
+            </div>
+            <div class="details">
+              <h3>KazAgro Jambyl</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              =
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+          <li>
+            <div class="time">
+              <h2>27 <br /><span>March</span></h2>
+            </div>
+            <div class="details">
+              <h3>Theater Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <a href="#">View Details</a>
+            </div>
+            <div style="clear: both"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      let slideIndex = 0;
+      showSlide(slideIndex);
+
+      function nextSlide() {
+        showSlide((slideIndex += 1));
+      }
+
+      function prevSlide() {
+        showSlide((slideIndex -= 1));
+      }
+
+      function showSlide(n) {
+        const slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {
+          slideIndex = 0;
+        }
+        if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

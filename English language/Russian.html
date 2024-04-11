@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== ЗНАЧОК ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== ШРИФТЫ REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Регион Жамбыл Тараз</title>
+  </head>
+  <body class="body">
+    <!--==================== ШАПКА ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Taraz Trick Trip</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Главная</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О нас</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Популярные</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#explore" class="nav__link">Путешествия</a>
+            </li>
+          </ul>
+
+          <!-- Кнопка закрытия -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <ul class="menu list-reset">
+          <li class="menu__item">
+            <button class="menu__btn a">Языки</button>
+            <div class="dropdown">
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item">
+                  <a
+                    href="../English language/English.html"
+                    class="dropdown__link"
+                    >Английский</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="" class="dropdown__link">Русский</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Кнопка переключения темы -->
+
+        <div class="toggle_containerz">
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <img src="./assets/img/menu_80837.png" class="nav__toggle" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== ОСНОВНОЙ КОНТЕНТ ====================-->
+    <main class="main">
+      <!--==================== ГЛАВНАЯ ====================-->
+      <section class="home section" id="home">
+        <img
+          src="assets/img/Sofosbuvir-Taraz.jpg"
+          alt="home image"
+          class="home__bg"
+        />
+        <div class="home__shadow"></div>
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__subtitle">
+              Добро пожаловать в Тараз, город Жамбыл
+            </h3>
+
+            <h1 class="home__title">
+              Исследуйте <br />
+              Казахстан
+            </h1>
+
+            <p class="home__description">
+              Отправляйтесь в путешествие по Казахстану, открывайте райские
+              уголки, острова, горы и многое другое, начните свое путешествие
+              прямо сейчас.
+            </p>
+
+            <div class="btn__container">
+              <a href="../book/eng_book.html" class="button">
+                Бронирование <i class="ri-arrow-right-line"></i>
+              </a>
+              <br>
+              <a href="../book/eng_book.html" class="button">
+                Событие
+              </a>
+            </div>
+          </div>
+
+          <div class="home__cards grid">
+            <article class="home__card">
+              <img
+                src="assets/img/the-entrance-to-tekturmas.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">
+                <a
+                  style="color: #fff"
+                  href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BC%D0%B0%D1%81"
+                  >Тектурмас</a
+                >
+              </h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/image1.png"
+                alt="home image"
+                class="home__card-img"
+                style="height: 14rem"
+              />
+              <h3 class="home__card-title">
+                <a
+                  style="color: #fff"
+                  href="https://kk.wikipedia.org/wiki/%D0%90%D2%9B%D1%8B%D1%80%D1%82%D0%B0%D1%81"
+                  >Археологический парк</a
+                >
+              </h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/caption.jpg"
+                alt="home image"
+                class="home__card-img"
+                style="height: 14rem"
+              />
+              <h3 class="home__card-title">
+                <a
+                  style="color: #fff"
+                  href="https://assembly.kz/news/k-ne-taraz-stinde-aly-ta-an-k-mbez/"
+                  >Дворцовый комплекс</a
+                >
+              </h3>
+              <div class="home__card-shadow"></div>
+            </article>
+
+            <article class="home__card">
+              <img
+                src="assets/img/facade-of-the-mausoleum.jpg"
+                alt="home image"
+                class="home__card-img"
+              />
+              <h3 class="home__card-title">
+                <a
+                  style="color: #fff"
+                  href="https://www.tripadvisor.com/LocationPhotoDirectLink-g1638447-d4859720-i76698946-Karahan_Mausoleum-Taraz_Jambyl_Province.html"
+                  >Фасад мавзолея</a
+                >
+              </h3>
+              <div class="home__card-shadow"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== О НАС ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              Узнайте <br />
+              Больше О Жамбыле
+            </h2>
+
+            <p class="about__description">
+              Все путешествия по Казахстану — это большое удовольствие и счастье
+              для каждого, наслаждайтесь видами, когда вы путешествуете по миру.
+              Путешествуйте безопасно и без забот, начните свое путешествие и
+              исследуйте райские уголки мира.
+            </p>
+
+            <a
+              href="https://ru.wikipedia.org/wiki/%D0%96%D0%B0%D0%BC%D0%B1%D1%8B%D0%BB%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C"
+              class="button"
+            >
+              Исследовать путешествия <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="about__image">
+            <img
+              src="https://wallpaperswide.com/download/taraz_at_night-wallpaper-1920x1080.jpg"
+              alt="about image"
+              class="about__img"
+            />
+            <div class="about__shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ПОПУЛЯРНЫЕ МЕСТА ====================-->
+      <section class="popular section" id="popular">
+        <h2 class="section__title">
+          Насладитесь красотой <br />
+          Казахстана
+        </h2>
+
+        <div class="popular__container container grid">
+          <article class="popular__card">
+            <div class="popular__image">
+              <img
+                src="https://avatars.mds.yandex.net/get-altay/6674804/2a000001884e83d0f58509b1cfb1246acc7e/L"
+                alt="popular image"
+                class="popular__img"
+              />
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">Шахристан</h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Тараз</span>
+            </div>
+          </article>
+
+          <article class="popular__card">
+            <div class="popular__image">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/12/d6/24/9e/mosque-entrance.jpg"
+                alt="popular image"
+                class="popular__img"
+              />
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">Мечеть</h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Тараз</span>
+            </div>
+          </article>
+
+          <article class="popular__card">
+            <div class="popular__image">
+              <img
+                src="https://tur-ray.ru/wp-content/uploads/2022/10/park-kultury-i-otdyha-im.-t.-ryskulova.jpg"
+                alt="popular image"
+                class="popular__img"
+              />
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">Парк Победы</h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Тараз</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== ИССЛЕДОВАНИЕ ====================-->
+      <section class="explore section" id="explore">
+        <div class="explore__container">
+          <div class="explore__image">
+            <img
+              src="https://wallpaperswide.com/download/taraz_at_night-wallpaper-1920x1080.jpg"
+              alt="expore image"
+              class="explore__img"
+            />
+            <div class="explore__shadow shadow2"></div>
+          </div>
+
+          <div class="explore__content container grid">
+            <div class="explore__data">
+              <h2 class="section__title">
+                Исследуйте <br />
+                Лучшие Событие
+              </h2>
+
+              <p class="explore__description">
+                Исследование райских мест, таких как острова и долины во время
+                путешествий по миру, это одно из величайших переживаний при
+                путешествии, оно приносит вам гармонию и покой, и вы можете
+                наслаждаться этим с большим комфортом.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ОТЗЫВЫ ====================-->
+      <section class="sectionf" id="feedback">
+        <h2 class="section-title">Отзывы пользователей</h2>
+
+        <div class="feedback__container">
+          <div class="feedback__main_nav">
+            <div class="feedback__block_nav-container">
+              <div
+                class="feedback__block_nav-block feedback__active"
+                onclick="user(1)"
+              >
+                <img
+                  src="./assets/img/imageuser3.png"
+                  alt=""
+                  class="feedback__img"
+                />
+                <span class="feedback__username">Томас Смит</span>
+              </div>
+
+              <div
+                class="feedback__block_nav-block feedback__active"
+                onclick="user(2)"
+              >
+                <img
+                  src="./assets/img/imageuser1.png"
+                  alt=""
+                  class="feedback__img"
+                />
+                <span class="feedback__username">Кейт Андерсон</span>
+              </div>
+
+              <div
+                class="feedback__block_nav-block feedback__active"
+                onclick="user(3)"
+              >
+                <img
+                  src="./assets/img/imageuser2.png"
+                  alt=""
+                  class="feedback__img"
+                />
+                <span class="feedback__username">Мария Ивановна</span>
+              </div>
+
+              <div
+                class="feedback__block_nav-block feedback__active"
+                onclick="user(4)"
+              >
+                <img
+                  src="./assets/img/imageuser4.png"
+                  alt=""
+                  class="feedback__img"
+                />
+                <span class="feedback__username">Мэтью Джон</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__bottom-container">
+            <div class="feedback__bottom-user_title">
+              <img
+                src="./assets/img/imageuser3.png"
+                class="feedback__bottom-img"
+                alt=""
+              />
+              <span class="feedback__bottom-username">Томас Смит</span>
+            </div>
+            <p>
+              Посетив Тараз, я был поражен его красотой и историческим
+              наследием. Старинные улицы, древние мавзолеи и мечети создают
+              уникальную атмосферу, которая заставляет почувствовать себя частью
+              великой истории. Очень рекомендую этот город для тех, кто ценит
+              культурные путешествия.
+            </p>
+          </div>
+
+          <div class="feedback__bottom-container">
+            <div class="feedback__bottom-user_title">
+              <img
+                src="./assets/img/imageuser1.png"
+                class="feedback__bottom-img"
+                alt=""
+              />
+              <span class="feedback__bottom-username">Кейт Андерсон</span>
+            </div>
+            <p>
+              Тараз оказался для меня открытием – великолепный город с богатой
+              историей. Здесь можно пройтись по узким улицам средневекового
+              центра, посетить музеи и археологические памятники. Это отличное
+              место для тех, кто хочет окунуться в атмосферу древних времен.
+            </p>
+          </div>
+
+          <div class="feedback__bottom-container">
+            <div class="feedback__bottom-user_title">
+              <img
+                src="./assets/img/imageuser2.png"
+                class="feedback__bottom-img"
+                alt=""
+              />
+              <span class="feedback__bottom-username">Мария Ивановна</span>
+            </div>
+            <p>
+              Путешествие в Тараз было захватывающим и информативным. Город
+              поражает своими архитектурными достопримечательностями, каждая из
+              которых рассказывает свою удивительную историю. Я провела
+              замечательное время, и с уверенностью могу сказать, что Тараз
+              стоит посетить хотя бы раз в жизни.
+            </p>
+          </div>
+
+          <div class="feedback__bottom-container">
+            <div class="feedback__bottom-user_title">
+              <img
+                src="./assets/img/imageuser4.png"
+                class="feedback__bottom-img"
+                alt=""
+              />
+              <span class="feedback__bottom-username">Мэтью Джон</span>
+            </div>
+            <p>
+              Тараз – это не только исторические памятники, но и гостеприимство
+              его жителей. Я был впечатлен теплотой и радушием местных жителей,
+              готовых помочь и поделиться интересными историями о городе. Помимо
+              этого, Тараз предлагает разнообразные развлечения и экскурсии для
+              туристов всех возрастов. Это замечательное место для семейного
+              отдыха и образовательных поездок.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ПРИСОЕДИНЯЙТЕСЬ ====================-->
+      <section class="join section">
+        <div class="join__container container grid">
+          <div class="join__data">
+            <h2 class="section__title">
+              Ваше Путешествие <br />
+              Начинается Здесь
+            </h2>
+
+            <p class="join__description">
+              Будьте в курсе последних путешествий и информации от нас.
+            </p>
+
+            <form action="" class="join__form">
+              <input
+                type="email"
+                placeholder="Введите ваш email"
+                class="join__input"
+              />
+
+              <input
+                type="email"
+                placeholder="Введите информацию о вас"
+                class="join__input"
+              />
+            </form>
+          </div>
+
+          <div class="join__image">
+            <img
+              src="https://tur-ray.ru/wp-content/uploads/2022/10/park-kultury-i-otdyha-im.-t.-ryskulova.jpg"
+              alt="join image"
+              class="join__img"
+            />
+            <div class="join__shadow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== ПОДВАЛ ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="#" class="footer__logo">Путешествия</a>
+
+            <p class="footer__description">
+              Путешествуйте с нами и исследуйте <br />
+              мир без границ.
+            </p>
+          </div>
+
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">О нас</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">О нас</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Возможности</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Новости и блог</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Компания</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Часто задаваемые вопросы</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">История</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Контакты</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Центр поддержки</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Служба поддержки</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Свяжитесь с нами</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Поддержка</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Условия и сервисы</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer__link">Платежи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-facebook-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-twitter-line"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== ВЕРНУТЬСЯ ВВЕРХ ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== ОСНОВНОЙ JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
