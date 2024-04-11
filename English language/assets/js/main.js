@@ -1,12 +1,17 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
+const navClose  = document.getElementById("nav-close");
+const darkMoode = document.getElementById("dark-logh");
 
 let calc = 0;
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         if (calc == 0) {
             navMenu.classList.add('show-menu');
+            navClose.style.display = "block";
+            navToggle.style.display = "none";
+            darkMoode.style.display = "none";
             calc = 1;
         } else {
             navMenu.classList.remove('show-menu');
@@ -14,6 +19,14 @@ if (navToggle) {
         }
     });
 }
+
+navClose.addEventListener("click", () =>{
+    navClose.style.display = "none";
+    navToggle.style.display = "block";
+    navMenu.classList.remove('show-menu');
+    darkMoode.style.display = "block";
+    calc = 0
+})
 
 
 /*=============== REMOVE MENU MOBILE ===============*/
